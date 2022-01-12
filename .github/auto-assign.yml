@@ -3,9 +3,11 @@ addReviewers: true
 addAssignees: author
 reviewers:
   - octocat
-  - CloneJS
+  - bubkoo
+  - clonejs
 numberOfReviewers: 1
 assignees:
+  - bubkoo
   - octocat
 numberOfAssignees: 0
 skipKeywords:
