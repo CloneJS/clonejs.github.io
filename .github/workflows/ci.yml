@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: zone checks
-      run: pip install -m requirement.txt
+      run: pip install -r requirement.txt
     - name: dig
       run: dig -r dns.txt
     - name: Build the site in the jekyll/builder container
