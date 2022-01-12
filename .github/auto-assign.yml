@@ -3,6 +3,7 @@ addReviewers: true
 addAssignees: author
 reviewers:
   - octocat
+  - CloneJS
 numberOfReviewers: 1
 assignees:
   - octocat
