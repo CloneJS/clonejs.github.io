@@ -1,0 +1,11 @@
+# Set to true to add reviewers to PRs
+addReviewers: true
+addAssignees: author
+reviewers:
+  - octocat
+numberOfReviewers: 1
+assignees:
+  - octocat
+numberOfAssignees: 0
+skipKeywords:
+  - wip
