@@ -1,4 +1,4 @@
-name: CI
+name: Jekyll site CI
 
 on:
   push:
@@ -13,12 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: zone checks
-      run: pip install -r requirement.txt
-    - name: dig
-      run: dig -r dns.txt
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --watch && jekyll build --trace"
+        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future && jekyll build --trace"
